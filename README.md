@@ -1,15 +1,7 @@
+This Repo based on
+https://github.com/Alexis12119/nvim-config
+
 <div align="center">
-
-![Last commit](https://img.shields.io/github/last-commit/Alexis12119/nvim-config?style=for-the-badge&logo=git&color=000F10&logoColor=dark%20orange&labelColor=302D41)
-
-[![](https://img.shields.io/badge/Neovim-0.10+-blueviolet.svg?style=for-the-badge&color=000F10&logo=Neovim&logoColor=green&labelColor=302D41)](https://github.com/neovim/neovim)
-
-![241129_14h36m50s_screenshot](https://github.com/user-attachments/assets/3391b51c-118b-4827-8839-e3cc20f836eb)
-
-![241129_14h34m39s_screenshot](https://github.com/user-attachments/assets/ab981434-29ef-4a0d-9912-38da0a7886e9)
-
-</div>
-
 ## 📄 Requirements
 
 Before you dive in, ensure you have the following requirements installed:
@@ -20,11 +12,9 @@ Before you dive in, ensure you have the following requirements installed:
 In windows, you can use [scoop](https://scoop.sh/) to install them.
 
 - **Git:**
-
   - [lazygit](https://github.com/jesseduffield/lazygit)
 
 - **Telescope:**
-
   - [fd](https://github.com/sharkdp/fd)
   - [bat](https://github.com/sharkdp/bat)
   - [ripgrep](https://github.com/BurntSushi/ripgrep)
@@ -32,12 +22,10 @@ In windows, you can use [scoop](https://scoop.sh/) to install them.
   - [mingw-nuwen](https://nuwen.net/mingw.html)
 
 - **Nerd Font (For Icons):**
-
   - [JetBrainsMono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono)
   - [Other Fonts](https://www.nerdfonts.com/font-downloads)
 
 - **Neovim:**
-
   - [Neovim 0.10+](https://github.com/neovim/neovim/releases)
   </details>
 
@@ -46,12 +34,10 @@ In windows, you can use [scoop](https://scoop.sh/) to install them.
 Please follow these steps:
 
 1. **Preparation**:
-
    - Ensure that Neovim is not running.
    - Remove or move your current `nvim` directory (if it exists).
 
 2. **Installation**:
-
    - On Linux/MacOS:
 
      ```sh
@@ -81,13 +67,6 @@ Please follow these steps:
 - **Git Integration**: Effortlessly manage Git repositories with [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) and [lazygit](https://github.com/jesseduffield/lazygit).
 - **Keymap Cheatsheet**: Quickly reference keymaps with [which-key.nvim](https://github.com/folke/which-key.nvim).
 - **Discord Rich Presence**: Tailor your presence like never before with [cord.nvim](https://github.com/vyfor/cord.nvim).
-<!-- - **Markdown Preview**: Preview your Markdown files with [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim). -->
-
-## 🌟 Stargazers
-
-I appreciate the support from all the Stargazers!
-
-[![Stargazers](http://reporoster.com/stars/dark/notext/Alexis12119/nvim-config)](https://github.com/Alexis12119/nvim-config/stargazers)
 
 ### CREDITS
 
