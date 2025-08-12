@@ -63,11 +63,11 @@ M.ui = {
 
 M.nvdash = {
   load_on_startup = true,
-  header = get_header "nvchad",
+  header = get_header "anya",
   buttons = {
     { txt = "  Find File", keys = "Spc Spc", cmd = "Telescope find_files" },
     { txt = "󰈚  Recent Files", keys = "Spc f r", cmd = "Telescope oldfiles" },
-    { txt = "󰈭  Find Word", keys = "Spc /", cmd = "Telescope live_grep" }, 
+    { txt = "󰈭  Find Word", keys = "Spc /", cmd = "Telescope live_grep" },
     { txt = "  Find Projects", keys = "Spc f p", cmd = "Telescope projects" },
     { txt = "  Themes", keys = "Spc f t", cmd = "Telescope themes" },
     { txt = "  Mappings", keys = "Spc n c", cmd = "NvCheatsheet" },
