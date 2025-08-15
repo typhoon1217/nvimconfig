@@ -167,6 +167,18 @@ autocmd("ModeChanged", {
   desc = "Highlighting matched words when searching",
 })
 
+autocmd("InsertLeave", {
+  callback = function()
+    local input_toggle = "fcitx5-remote"
+    local input_status = tonumber(vim.fn.system(input_toggle))
+    if input_status == 2 then
+      vim.fn.system(input_toggle .. " -c")
+    end
+  end,
+  group = general,
+  desc = "Switch to English when leaving insert mode",
+})
+
 autocmd("FileType", {
   pattern = { "gitcommit", "markdown", "text", "log" },
   callback = function()
