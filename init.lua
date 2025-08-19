@@ -46,3 +46,6 @@ require "core.autocommands"
 require "core.filetypes"
 require "core.utils"
 require "mappings"
+
+-- Initialize database connections
+require("core.database").setup()

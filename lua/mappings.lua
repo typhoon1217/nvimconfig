@@ -343,3 +343,23 @@ vim.keymap.set("n", "<leader>Wv", "<cmd>vsplit<cr>", { desc = "Window | Vertical
 vim.keymap.set("n", "<leader>Wh", "<cmd>split<cr>", { desc = "Window | Horizontal Split", silent = true })
 vim.keymap.set("n", "<leader>We", "<C-w>=", { desc = "Window | Equalize Splits", silent = true })
 vim.keymap.set("n", "<leader>Wx", "<cmd>close<cr>", { desc = "Window | Close Current Split", silent = true })
+
+-- Database management
+vim.keymap.set("n", "<leader>da", function()
+  require("core.database").add_connection()
+end, { desc = "Database | Add Connection", silent = true })
+
+vim.keymap.set("n", "<leader>dR", function()
+  require("core.database").setup()
+  vim.notify("Database connections reloaded", vim.log.levels.INFO)
+end, { desc = "Database | Reload Connections", silent = true })
+
+vim.keymap.set("n", "<leader>dD", function()
+  if vim.g.dbs then
+    for name, url in pairs(vim.g.dbs) do
+      print(name .. ": " .. url)
+    end
+  else
+    print("No database connections found")
+  end
+end, { desc = "Database | Debug Connections", silent = true })
