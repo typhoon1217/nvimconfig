@@ -15,8 +15,8 @@ return {
     end, { desc = "Options | Toggle Autocomplete" })
   end,
   opts = function(_, opts)
-    -- table.insert(opts.sources, 2, { name = "codeium" })
-    -- table.insert(opts.sources, 1, { name = "supermaven" })
+    table.insert(opts.sources, 1, { name = "codeium" })
+    -- table.insert(opts.sources, 1, { name = "supermaven" }) -- DISABLED
 
     opts.mapping = vim.tbl_extend("force", {}, opts.mapping, {
       -- You can add here new mappings.
@@ -66,14 +66,6 @@ return {
           },
         })
       end,
-    },
-    -- AI Autocomplete
-    {
-      "Exafunction/codeium.nvim",
-      enabled = false,
-      opts = {
-        enable_chat = true,
-      },
     },
     {
       "L3MON4D3/LuaSnip",
