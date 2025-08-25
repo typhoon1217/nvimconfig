@@ -85,6 +85,13 @@ return {
       "<cmd>Telescope git_commits<cr>",
       { desc = "Telescope | Checkout commit", silent = true }
     )
+
+    vim.keymap.set(
+      "n",
+      "<leader>fi",
+      "<cmd>Telescope media_files<cr>",
+      { desc = "Telescope | Media Files", silent = true }
+    )
   end,
   dependencies = {
     {
@@ -93,6 +100,13 @@ return {
       enabled = function()
         return vim.fn.executable "make" == 1
       end,
+    },
+    {
+      "nvim-telescope/telescope-media-files.nvim",
+      dependencies = {
+        "nvim-lua/popup.nvim",
+        "nvim-lua/plenary.nvim",
+      },
     },
   },
   opts = {
@@ -104,7 +118,13 @@ return {
         hidden = true,
       },
     },
-    extensions_list = { "themes", "terms", "fzf", "projects" },
+    extensions_list = { "themes", "terms", "fzf", "projects", "media_files" },
+    extensions = {
+      media_files = {
+        filetypes = { "png", "webp", "jpg", "jpeg", "gif", "svg", "webm", "mp4", "pdf" },
+        find_cmd = "rg",
+      },
+    },
     defaults = {
       path_display = { "smart" },
       mappings = {
