@@ -1,0 +1,1 @@
+/home/typhoon/.config/omarchy/current/theme/neovim.lua
