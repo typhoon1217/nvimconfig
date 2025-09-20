@@ -1,7 +1,8 @@
 ---@type NvPluginSpec
--- NOTE: AI Autocomplete
+-- NOTE: AI Autocomplete - DISABLED (switched to supermaven)
 return {
   "Exafunction/codeium.nvim",
+  enabled = false,
   event = {
     "BufReadPost",
     "BufNewFile",

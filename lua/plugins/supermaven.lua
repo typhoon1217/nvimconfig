@@ -1,5 +1,5 @@
 ---@type NvPluginSpec
--- NOTE: AI Autocomplete - DISABLED (switched to codeium)
+-- NOTE: AI Autocomplete - ACTIVE
 return {
   "supermaven-inc/supermaven-nvim",
   -- commit = "df3ecf7",
